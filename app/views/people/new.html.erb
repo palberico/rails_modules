@@ -1,0 +1,25 @@
+<h1> Add New Person </h1>
+
+<%= form_for @people do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :nam %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :hair_Color %>
+  <%= f.text_field :hair_color %>
+
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color %>
+
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+
+  <%= radio_button_tag(:alive, "alive") %>
+  <%= label_tag(:alive, "Still Kickin") %>
+  <%= radio_button_tag(:alive, "DEAD") %>
+  <%= label_tag(:alive, "Stopped Kickin") %>
+  
+  <%= f.submit %>
+<% end %>
